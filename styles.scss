@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+$font-inter: 'Inter', sans-serif;
+$font-lexend: 'Lexend Deca', sans-serif;
+$very-dark-blue: hsl(233, 47%, 7%); /* Main background */
+$dark-desaturated-blu: hsl(244, 38%, 16%); /* Card background */
+$soft-violet: hsl(277, 64%, 61%); /* Accent */
+$white: hsl(0, 0%, 100%); /* Main heading, stats */
+$slightly-transparent-white: hsla(0, 0%, 100%, 0.75); /* Main Paragraph */
+$slightly-transparent-white: hsla(0, 0%, 100%, 0.6); /* Stat Headings */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    filter: brightness(0) saturate(100%) invert(49%) sepia(18%) saturate(4147%) hue-rotate(238deg) brightness(87%) contrast(97%);
+    opacity: .3;
+}
