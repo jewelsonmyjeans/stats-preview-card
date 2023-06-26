@@ -3,18 +3,70 @@
 $font-inter: 'Inter', sans-serif;
 $font-lexend: 'Lexend Deca', sans-serif;
 $very-dark-blue: hsl(233, 47%, 7%); /* Main background */
-$dark-desaturated-blu: hsl(244, 38%, 16%); /* Card background */
+$dark-desaturated-blue: hsl(244, 38%, 16%); /* Card background */
 $soft-violet: hsl(277, 64%, 61%); /* Accent */
 $white: hsl(0, 0%, 100%); /* Main heading, stats */
-$slightly-transparent-white: hsla(0, 0%, 100%, 0.75); /* Main Paragraph */
-$slightly-transparent-white: hsla(0, 0%, 100%, 0.6); /* Stat Headings */
+$slightly-transparent-white1: hsla(0, 0%, 100%, 0.75); /* Main Paragraph */
+$slightly-transparent-white2: hsla(0, 0%, 100%, 0.6); /* Stat Headings */
 
 html, body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    background-color: $very-dark-blue;
 }
 
-img {
-    filter: brightness(0) saturate(100%) invert(49%) sepia(18%) saturate(4147%) hue-rotate(238deg) brightness(87%) contrast(97%);
-    opacity: .3;
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 375px;
+    margin: 2em;
+    background-color: $dark-desaturated-blue;
+    color: $white;
+    border-radius: 10px;
+    text-align: center;
+    font-family: $font-inter;
+    img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    .container {
+        padding: 1em 2em;
+    }
+    .insights__span {
+        color: $soft-violet;
+    }
+    p {
+        font-size: 15px;
+        color: $slightly-transparent-white2;
+    }    
+    .description {
+        margin: 1em 0;
+    }
+    .stat-flex {
+        display: flex;
+        flex-direction: column;
+        font-family: $font-lexend;
+        p {
+            display: flex;
+            flex-direction: column;
+            text-transform: uppercase;
+            font-size: .75rem;
+        } 
+        span {
+            color: $white;
+            font-size: 1.5rem;
+            text-transform: lowercase;
+        }
+    } 
+}
+
+@media screen and (min-width: 500px) {
+
 }
