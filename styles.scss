@@ -20,6 +20,10 @@ html, body {
     background-color: $very-dark-blue;
 }
 
+.img-container {
+    background-color: $soft-violet;
+}
+
 
 main {
     display: flex;
@@ -35,6 +39,7 @@ main {
     img {
         width: 100%;
         border-radius: 10px 10px 0 0;
+        opacity: .4;
     }
     .container {
         padding: 1em 2em;
@@ -67,6 +72,27 @@ main {
     } 
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 700px) {
+    main {
+        flex-direction: row-reverse;
+        max-width: 900px;
+        text-align: left;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .container {
+            padding: 4em;
+        }
+        .stat-flex {
+            flex-direction: row;
+            justify-content: left;
+            p {
+                margin-right: 3em;
+            }
+        }
+    }
+
 
 }

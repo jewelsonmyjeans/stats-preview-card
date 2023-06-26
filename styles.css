@@ -16,6 +16,10 @@ html, body {
   background-color: hsl(233, 47%, 7%);
 }
 
+.img-container {
+  background-color: hsl(277, 64%, 61%);
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -31,6 +35,7 @@ main {
 main img {
   width: 100%;
   border-radius: 10px 10px 0 0;
+  opacity: 0.4;
 }
 main .container {
   padding: 1em 2em;
@@ -60,4 +65,28 @@ main .stat-flex span {
   color: hsl(0, 0%, 100%);
   font-size: 1.5rem;
   text-transform: lowercase;
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    flex-direction: row-reverse;
+    max-width: 900px;
+    text-align: left;
+  }
+  main img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .container {
+    padding: 4em;
+  }
+  main .stat-flex {
+    flex-direction: row;
+    justify-content: left;
+  }
+  main .stat-flex p {
+    margin-right: 3em;
+  }
 }/*# sourceMappingURL=styles.css.map */
